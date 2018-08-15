@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  letter-spacing: 1.7px;
+}
+
+body {
+  background-color: #AFCBD1;
+  color: #5C4B28;
+}
+
+button {
+  background-color: #636B73 !important;
+  border-color: #636B73 !important;
+}
+
+form {
+  color: #636B73 !important;
+}
+
+input {
+  max-width: 220px;
+}
+
+.hidden {
+  display: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.nav-container {
+  background: #0A2012;
+  height: auto;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  color: #44A4C4;
+}
+
+.call-text {
+  color: #c6b047;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.call-text h4 {
+  margin-top: -15px;
+}
+
+#empty-space {
+  height: 75px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+  height: 500px;
+}
+
+.table {
+  margin: 0;
+  display: table;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.table-item {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#image1 {
+  background-image: url("../images/windows1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+footer {
+  padding: 10px;
+  padding-top: 18px;
+  color: white;
+  background-color: #5C4B28;
+}
