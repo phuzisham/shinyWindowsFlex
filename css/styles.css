@@ -119,13 +119,19 @@ footer {
   background-color: #5C4B28;
 }
 
+@media only screen and (min-width: 1016px) {
+  .submit-button {
+    padding-left: 10px;
+  }
+}
+
 @media only screen and (max-width: 1016px) {
   .form-column {
     width: 100%;
     padding: 0px;
   }
 
-  #form2 {
+  #form2, .submit-button {
     margin-top: 20px;
   }
 }
