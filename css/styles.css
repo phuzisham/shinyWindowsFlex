@@ -42,6 +42,9 @@ input {
 }
 
 .header-text {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Marck Script';
+  font-weight: bold;
   color: #44A4C4;
 }
 
