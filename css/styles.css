@@ -172,6 +172,10 @@ footer {
   .call-text {
     position: relative;
   }
+
+  #empty-space {
+    height: 135px;
+  }
 }
 
 @media only screen and (max-width: 435px) {
