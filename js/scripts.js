@@ -34,11 +34,11 @@ function validateForm(windows, radio, email) {
     if (isNaN(screens)) {
       alert('Please input a numerical value.');
     } else {
-      $('#estimate-form').html("<div class='table-item'>"+"<h4>Your online estimate is: $"+parseInt(estimateReturn(windows, radio, email, screens))+"</h4><h5>Call <b>406-672-7616</b> to schedule an appointment today!</h5>"+"</div>");
+      $('#estimate-form').html("<div class='table-item'>"+"<h1 class='header-text'>Shiny Windows</h1><h4>Your online estimate is: $"+parseInt(estimateReturn(windows, radio, email, screens))+"</h4><h5>Call <b>406-672-7616</b> to schedule an appointment today!</h5>"+"</div>");
     }
   } else {
     console.log('made it');
-    $('#estimate-form').html("<div class='table-item'>"+"<h4>Your online estimate is: $"+parseInt(estimateReturn(windows, radio, email, screens))+"</h4><h5>Call <b>406-672-7616</b> to schedule an appointment today!</h5>"+"</div>");
+    $('#estimate-form').html("<div class='table-item'>"+"<h1 class='header-text'>Shiny Windows</h1><h4>Your online estimate is: $"+parseInt(estimateReturn(windows, radio, email, screens))+"</h4><h5>Call <b>406-672-7616</b> to schedule an appointment today!</h5>"+"</div>");
   }
 }
 
