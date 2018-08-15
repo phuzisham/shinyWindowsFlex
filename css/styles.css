@@ -2,6 +2,7 @@
   margin: 0;
   font-family: sans-serif;
   letter-spacing: 1.7px;
+  line-height: 20px;
 }
 
 body {
@@ -68,8 +69,8 @@ input {
 .flex-item {
   padding: 0px;
   margin: 0px;
-  width: 50%;
   height: 500px;
+  width: 50%;
 }
 
 .table {
@@ -90,11 +91,25 @@ input {
   background-position: center;
   padding: 0;
   margin: 0;
-  z-index: 1;
 }
 
 #image1 {
   background-image: url("../images/windows1.jpg");
+}
+
+#image2 {
+  background-image: url("../images/windows2.jpg");
+  order: 2;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-column {
+  width: 50%;
+  padding: 10px;
 }
 
 footer {
@@ -102,4 +117,73 @@ footer {
   padding-top: 18px;
   color: white;
   background-color: #5C4B28;
+}
+
+@media only screen and (max-width: 1016px) {
+  .form-column {
+    width: 100%;
+    padding: 0px;
+  }
+
+  #form2 {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #image2 {
+    order: 0;
+  }
+
+  .flex-item {
+    width: 100%;
+    height: 420px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .image {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-item {
+    height: 500px;
+  }
+
+  .image {
+    height: 140px;
+  }
+
+  .table {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .call-text {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .flex-item {
+    height: 600px;
+  }
+
+  .image {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .flex-item {
+    height: 630px;
+  }
+
+  .image {
+    height: 120px;
+  }
 }

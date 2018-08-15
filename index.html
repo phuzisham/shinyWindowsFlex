@@ -30,6 +30,49 @@
         </div>
       </div>
     </div>
+    <div class="flex-container">
+      <div class="flex-item image" id="image2"></div>
+      <div class="flex-item table">
+        <div class="table-item">
+          <h2>Free online estimate:</h2>
+          <form class="form-row">
+            <div class="form-column">
+              <div class="form-group">
+                <input type="windows" class="form-control" id="windows" placeholder="Number of windows" required>
+                <small id="windowHelp" class="form-text text-muted">Number of windows should be counted per pane of glass.</small>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios" id="insideRadio" value="insideRadio" checked>
+                <label class="form-check-label" for="insideRadio">Inside/Outside</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios" id="outsideRadio" value="outsideRadio">
+                <label class="form-check-label" for="outsideRadio">Outside</label>
+              </div><br>
+              <small>Check outside if you don't need the inside of the windows cleaned.</small>
+            </div>
+            <div class="form-column">
+              <div class="form-group" id="form2">
+                <input type="email" class="form-control" id="email" placeholder="Email address">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-check" id="screenCheckDiv">
+                <input type="checkbox" class="form-check-input" id="screenCheck" name="screenCheck">
+                <label class="form-check-label" for="screenCheck">Include screen cleaning</label>
+              </div>
+              <div class="form-group hidden" id="hidden1">
+                <input type="screens" class="form-control" id="screens" placeholder="Number of screens">
+              </div>
+            </div>
+            <div>
+              <br>
+              <button type="submit" class="btn btn-primary" id="submit-estimate">Submit</button>
+              <small class="form-text text-muted">Click submit for your free online estimate! This estimate may differ from the actual cost.</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
   <footer>
     <div class="centered">
