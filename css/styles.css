@@ -85,13 +85,16 @@ input {
   vertical-align: middle;
 }
 
-#image1 {
-  background-image: url("../images/windows1.jpg");
+.image {
   background-size: cover;
   background-position: center;
   padding: 0;
   margin: 0;
   z-index: 1;
+}
+
+#image1 {
+  background-image: url("../images/windows1.jpg");
 }
 
 footer {
