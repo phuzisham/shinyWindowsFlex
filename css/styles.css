@@ -42,7 +42,6 @@ input {
 }
 
 .header-text {
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Marck Script';
   font-weight: bold;
   color: #44A4C4;
@@ -89,21 +88,16 @@ input {
   vertical-align: middle;
 }
 
-.image {
-  background-size: cover;
-  background-position: center;
-  padding: 0;
-  margin: 0;
-}
-
-#test-image {
+.image-scroll {
+  padding: 0px;
+  margin: 0px;
   position: relative;
   width: 50%;
   height: 500px;
   overflow: hidden;
 }
 
-#test-image img {
+.image-scroll img {
   position: absolute;
   max-width: 100%;
   width: 100%;
@@ -132,25 +126,20 @@ input {
   }
 }
 
-#test-image img:nth-of-type(1) {
+.image-scroll img:nth-of-type(1) {
   animation-delay: 12s;
 }
-#test-image img:nth-of-type(2) {
+.image-scroll img:nth-of-type(2) {
   animation-delay: 8s;
 }
-#test-image img:nth-of-type(3) {
+.image-scroll img:nth-of-type(3) {
   animation-delay: 4s;
 }
-#test-image img:nth-of-type(4) {
+.image-scroll img:nth-of-type(4) {
   animation-delay: 0;
 }
 
-#image1 {
-  background-image: url("../images/windows1.jpg");
-}
-
 #image2 {
-  background-image: url("../images/windows2.jpg");
   order: 2;
 }
 
@@ -186,9 +175,7 @@ footer {
   #form2, .submit-button {
     margin-top: 20px;
   }
-}
 
-@media only screen and (max-width: 850px) {
   #image2 {
     order: 0;
   }
@@ -202,7 +189,8 @@ footer {
     flex-direction: column;
   }
 
-  .image {
+  .image-scroll {
+    width: 100%;
     height: 140px;
   }
 }
@@ -210,10 +198,6 @@ footer {
 @media only screen and (max-width: 600px) {
   .flex-item {
     height: 500px;
-  }
-
-  .image {
-    height: 140px;
   }
 
   .table {
@@ -234,18 +218,10 @@ footer {
   .flex-item {
     height: 600px;
   }
-
-  .image {
-    height: 140px;
-  }
 }
 
 @media only screen and (max-width: 435px) {
   .flex-item {
     height: 630px;
-  }
-
-  .image {
-    height: 120px;
   }
 }
